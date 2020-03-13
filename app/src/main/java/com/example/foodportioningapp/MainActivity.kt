@@ -1,7 +1,9 @@
 package com.example.foodportioningapp
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log.d
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
@@ -18,7 +20,21 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         home_to_calculate.setOnClickListener {
-            startActivity(Intent(this, HomeToCalculate::class.java))
+            startActivity(Intent(this, CalculateProportion::class.java))
         }
+
+        home_to_book.setOnClickListener {
+            startActivity(Intent(this, RecipeBook::class.java))
+        }
+
+        home_to_recipe.setOnClickListener {
+            startActivity(Intent(this, AddRecipe::class.java))
+        }
+/*
+        val preferences = getSharedPreferences("database", Context.MODE_PRIVATE)
+        val savedIngredient = preferences.getString("savedIngredientName", "This value doesn't exist.")
+        d("Derek", "saved ingredient is: $savedIngredient")
+
+ */
     }
 }

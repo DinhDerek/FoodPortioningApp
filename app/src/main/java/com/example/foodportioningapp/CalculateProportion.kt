@@ -1,19 +1,16 @@
 package com.example.foodportioningapp
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.calculate_portion.*
 
-class HomeToCalculate: AppCompatActivity() {
+class CalculateProportion: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.calculate_portion)
+        supportActionBar?.title = "Calculate Proportion";
+        supportActionBar?.setDisplayHomeAsUpEnabled(true);
 
-        calculate_to_home.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-        }
     }
 }
 

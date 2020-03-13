@@ -19,7 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeToCalculate" />
+        <activity android:name=".CalculateProportion"
+            android:parentActivityName = ".MainActivity"/>
+        <activity android:name=".RecipeBook"
+            android:parentActivityName = ".MainActivity"/>
+        <activity android:name=".AddRecipe"
+            android:parentActivityName = ".MainActivity"/>
+        <activity android:name=".AddIngredient"
+            android:parentActivityName = ".AddRecipe"/>
     </application>
 
 </manifest>
