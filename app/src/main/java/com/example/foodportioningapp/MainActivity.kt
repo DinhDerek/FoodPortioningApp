@@ -10,6 +10,7 @@ import android.view.Menu
 import android.view.MenuItem
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.add_recipe_second.*
 import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -30,11 +31,6 @@ class MainActivity : AppCompatActivity() {
         home_to_recipe.setOnClickListener {
             startActivity(Intent(this, AddRecipe::class.java))
         }
-/*
-        val preferences = getSharedPreferences("database", Context.MODE_PRIVATE)
-        val savedIngredient = preferences.getString("savedIngredientName", "This value doesn't exist.")
-        d("Derek", "saved ingredient is: $savedIngredient")
 
- */
     }
 }

@@ -13,7 +13,7 @@
         <item>Select unit of measurement</item>
         <item>tsp</item>
         <item>tbsp</item>
-        <item>c</item>
+        <item>cup(s)</item>
         <item>pt</item>
         <item>qt</item>
         <item>gal</item>
@@ -23,5 +23,7 @@
         <item>lb</item>
         <item>l</item>
         <item>ml</item>
+        <item>pinch(es)</item>
+        <item>piece(s)</item>
     </string-array>
 </resources>

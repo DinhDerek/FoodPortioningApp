@@ -1,5 +1,6 @@
 package com.example.foodportioningapp
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -11,12 +12,10 @@ import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.add_ingredient.*
-import kotlinx.android.synthetic.main.add_ingredient_10_popup.*
 import kotlinx.android.synthetic.main.add_ingredient_10_popup.view.*
-import kotlinx.android.synthetic.main.add_ingredient_10_popup.view.ingredient_10_warning_text
 import kotlinx.android.synthetic.main.add_ingredient_blank_popup.view.*
 
-class AddIngredient: AppCompatActivity() {
+class AddIngredientSecond: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -91,8 +90,6 @@ class AddIngredient: AppCompatActivity() {
                 intent.putExtra("IngredientList", ingredientList)
                 startActivity(intent)
             }
-
         }
-
     }
 }

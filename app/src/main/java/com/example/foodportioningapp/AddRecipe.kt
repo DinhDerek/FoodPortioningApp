@@ -14,7 +14,10 @@ class AddRecipe: AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         initial_ingredient.setOnClickListener {
-            startActivity(Intent(this, AddIngredient::class.java))
+            val ingredientList = IngredientArrayClass()
+            val intent = Intent(this, AddIngredient::class.java)
+            intent.putExtra("IngredientList", ingredientList)
+            startActivity(intent)
         }
 
     }
